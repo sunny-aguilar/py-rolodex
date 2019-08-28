@@ -13,7 +13,7 @@ class Contacts:
     def set_emails(self, email):
         self.__email = email
 
-
+    # getters
     def get_name(self):
         return self.__name
 
