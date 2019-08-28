@@ -99,6 +99,8 @@ def look_up(mycontacts):
 
     print(mycontacts.get(name, 'That name is not found.'))
 
+    print(mycontacts)
+
 
 def add(mycontacts):
     name = input('Name: ')
