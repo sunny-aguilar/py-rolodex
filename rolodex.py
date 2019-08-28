@@ -102,7 +102,8 @@ def add(mycontacts):
     email = input('Email: ')
 
 
-
+def change:
+    name = input('Enter a name: ')
 
 
 
