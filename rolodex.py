@@ -22,6 +22,7 @@ def main():
             look_up(mycontacts)
         elif choice == ADD:
             add(mycontacts)
+
         elif choice == CHANGE:
             change(mycontacts)
 
