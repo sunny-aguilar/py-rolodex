@@ -27,8 +27,7 @@ def main():
         elif choice == DELETE:
             delete(mycontacts)
 
-
-save_contacts(mycontacts)
+    save_contacts(mycontacts)
 
 
 def load_contacts():
@@ -72,7 +71,7 @@ def load_contacts():
     return contact_dct
 
 
-def get_menu_choice()
+def get_menu_choice():
     print()
     print('Menuy')
     print('-----------------------------')
@@ -82,5 +81,21 @@ def get_menu_choice()
     print('4. Delete a contact')
     print('5. QUit the program')
     print()
+
+    choice = int(input('Enter your choice'))
+
+    while choice < int(input('Enter a valid: ')):
+        choice = int(input('Enter a valid choice: '))
+
+    return choice
+
+
+def look_up(mycontacts):
+    name = input('Enter a name: ')
+
+    print(mycontacts.get(name, 'That name is not found.'))
+
+
+
 
 
