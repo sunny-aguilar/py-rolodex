@@ -18,6 +18,7 @@ def main():
 
     while choice != QUIT:
         choice = get_menu_choice(mycontacts)
+
         if choice == LOOK_UP:
             look_up(mycontacts)
 
