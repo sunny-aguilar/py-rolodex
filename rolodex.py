@@ -141,6 +141,7 @@ def change(mycontacts):
         mycontacts[name] = entry
 
         print('Information updated.')
+
     else:
         print('THat name is not found.')
 
