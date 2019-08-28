@@ -30,6 +30,7 @@ def main():
     save_contacts(mycontacts)
 
 
+
 def load_contacts():
     try:
         input_file = open(FILENAME, 'rb')
@@ -71,7 +72,7 @@ def load_contacts():
     return contact_dct
 
 
-def get_menu_choice():
+def get_menu_choice(mycontacts):
     print()
     print('Menu')
     print('-----------------------------')
@@ -81,6 +82,9 @@ def get_menu_choice():
     print('4. Delete a contact')
     print('5. Quit the program')
     print()
+    print('Current Objects')
+    print('------------------------------')
+    print(mycontacts)
 
     choice = int(input('Enter your choice: '))
 
@@ -110,6 +114,8 @@ def add(mycontacts):
     else:
         print('That name already exists.')
 
+    print(mycontacts)
+
 
 def change(mycontacts):
     name = input('Enter a name: ')
@@ -117,7 +123,7 @@ def change(mycontacts):
     if name in mycontacts:
         phone = input('Enter the new phone number: ')
         email = input('Enter the new email address: ')
-        entry = Contact.Contact(name, phone, email)
+        entry = contact.Contact(name, phone, email)
 
         mycontacts[name] = entry
         print('Information updated.')
