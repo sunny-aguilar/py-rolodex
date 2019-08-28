@@ -130,6 +130,8 @@ def change(mycontacts):
     else:
         print('THat name is not found.')
 
+    print(mycontacts)
+
 
 def delete(mycontacts):
     name = input('Enter a name: ')
@@ -146,6 +148,7 @@ def save_contacts(mycontacts):
     output_file = open(FILENAME, 'wb')
     pickle.dump(mycontacts, output_file)
     output_file.close()
+    print(mycontacts)
 
 main()
 
