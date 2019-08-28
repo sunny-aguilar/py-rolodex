@@ -17,7 +17,7 @@ def main():
     choice = 0
 
     while choice != QUIT:
-        choice = get_menu_choice()
+        choice = get_menu_choice(mycontacts)
         if choice == LOOK_UP:
             look_up(mycontacts)
         elif choice == ADD:
@@ -114,7 +114,7 @@ def add(mycontacts):
     else:
         print('That name already exists.')
 
-    print(mycontacts)
+    #print(mycontacts)
 
 
 def change(mycontacts):
@@ -140,9 +140,12 @@ def delete(mycontacts):
         print('That name is not found.')
 
 
+
+
 def save_contacts(mycontacts):
     output_file = open(FILENAME, 'wb')
     pickle.dump(mycontacts, output_file)
     output_file.close()
 
 main()
+
