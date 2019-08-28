@@ -19,7 +19,7 @@ def main():
     while choice != QUIT:
         choice = get_menu_choice()
         if choice == LOOK_UP:
-            look_up(mycontact)
+            look_up(mycontacts)
         elif choice == ADD:
             add(mycontacts)
         elif choice == CHANGE:
@@ -94,6 +94,13 @@ def look_up(mycontacts):
     name = input('Enter a name: ')
 
     print(mycontacts.get(name, 'That name is not found.'))
+
+
+def add(mycontacts):
+    name = input('Name: ')
+    phone = input('Phone: ')
+    email = input('Email: ')
+
 
 
 
