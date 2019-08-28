@@ -73,7 +73,7 @@ def load_contacts():
 
 def get_menu_choice():
     print()
-    print('Menuy')
+    print('Menu')
     print('-----------------------------')
     print('1. Look up a contact')
     print('2. Add a new contact')
@@ -101,6 +101,7 @@ def add(mycontacts):
     phone = input('Phone: ')
     email = input('Email: ')
 
+    #
     entry = contact.Contact(name, phone, email)
 
     if name not in mycontacts:
