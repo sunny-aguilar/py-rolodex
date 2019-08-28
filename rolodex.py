@@ -17,15 +17,17 @@ def main():
 
     while choice != QUIT:
         choice = get_menu_choice()
-        if choice == 'LOOK_UP':
+        if choice == LOOK_UP:
             look_up(mycontact)
-        elif choice == 'CHANGE':
+        elif choice == ADD:
             add(mycontacts)
+        elif choice == CHANGE:
+            change(mycontacts)
+        elif choice == DELETE:
+            delete(mycontacts)
 
 
-
-
-
+save_contatrs(mycontacts)
 
 
 
