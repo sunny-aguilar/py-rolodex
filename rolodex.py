@@ -84,7 +84,7 @@ def get_menu_choice():
 
     choice = int(input('Enter your choice'))
 
-    while choice < int(input('Enter a valid: ')):
+    while choice < :
         choice = int(input('Enter a valid choice: '))
 
     return choice
@@ -100,6 +100,14 @@ def add(mycontacts):
     name = input('Name: ')
     phone = input('Phone: ')
     email = input('Email: ')
+
+    entry = Contact.Contact(name, phone, email)
+
+    if name not in mycontacts:
+        mycontacts[name] = entry
+        print('The entry has been added.')
+    else:
+        print('That name already exists.')
 
 
 def change(mycontacts):
@@ -127,5 +135,7 @@ def delete(mycontacts):
 
 def save_contacts(mycontacts):
     output_file = open(FILENAME, 'wb')
+    pickle.dump(mycontacts, output_file)
+    output_file.close()
 
-
+main()
