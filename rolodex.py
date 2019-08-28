@@ -71,3 +71,16 @@ def load_contacts():
 
     return contact_dct
 
+
+def get_menu_choice()
+    print()
+    print('Menuy')
+    print('-----------------------------')
+    print('1. Look up a contact')
+    print('2. Add a new contact')
+    print('3. Change an existing contact')
+    print('4. Delete a contact')
+    print('5. QUit the program')
+    print()
+
+
