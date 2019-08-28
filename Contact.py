@@ -5,4 +5,15 @@ class Contacts:
         self.__name = name
 
     def set_name(self, name):
+        self.__phone = name
+
+    def set_phone(self, phone):
+        self.__phone = phone
+
+    def set_emails(self, email):
+        self.__email = email
+
+
+    def get_name(self):
+        return self.__name
 
