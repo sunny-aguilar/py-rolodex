@@ -125,5 +125,7 @@ def delete(mycontacts):
         print('That name is not found.')
 
 
-def save_contacts(mycontacts)
+def save_contacts(mycontacts):
+    output_file = open(FILENAME, 'wb')
+
 
