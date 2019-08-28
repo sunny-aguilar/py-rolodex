@@ -10,7 +10,17 @@ DELETE = 4
 
 FILENAME = 'contacts.dat'
 
+def main():
+    mycontacts = load_contacts()
 
+    choice = 0
+
+    while choice != QUIT:
+        choice = get_menu_choice()
+        if choice == 'LOOK_UP':
+            look_up(mycontact)
+        elif choice == 'CHANGE':
+            add(mycontacts)
 
 
 
