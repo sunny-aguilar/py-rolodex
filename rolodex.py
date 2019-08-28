@@ -121,6 +121,7 @@ def add(mycontacts):
     if name not in mycontacts:
         mycontacts[name] = entry
         print('The entry has been added.')
+
     else:
         print('That name already exists.')
 
