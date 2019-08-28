@@ -24,6 +24,7 @@ def main():
             add(mycontacts)
         elif choice == CHANGE:
             change(mycontacts)
+
         elif choice == DELETE:
             delete(mycontacts)
 
