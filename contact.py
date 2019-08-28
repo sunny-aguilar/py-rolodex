@@ -3,6 +3,8 @@
 class Contact:
     def __init__(self, name, phone, email):
         self.__name = name
+        self.__phone = phone
+        self.
 
     #
     def set_name(self, name):
