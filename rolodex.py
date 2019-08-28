@@ -101,7 +101,7 @@ def add(mycontacts):
     phone = input('Phone: ')
     email = input('Email: ')
 
-    # create
+    # create a
     entry = contact.Contact(name, phone, email)
 
     if name not in mycontacts:
