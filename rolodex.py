@@ -84,7 +84,7 @@ def get_menu_choice():
 
     choice = int(input('Enter your choice'))
 
-    while choice < :
+    while choice < LOOK_UP or choice > QUIT:
         choice = int(input('Enter a valid choice: '))
 
     return choice
