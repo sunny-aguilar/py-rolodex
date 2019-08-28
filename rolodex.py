@@ -35,6 +35,7 @@ def load_contacts():
     try:
         input_file = open(FILENAME, 'rb')
         contact_dct = pickle.load(input_file)
+
         input_file.close()
     except IOError:
         contact_dct = {}
