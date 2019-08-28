@@ -114,7 +114,7 @@ def add(mycontacts):
     else:
         print('That name already exists.')
 
-    #print(mycontacts)
+    print(mycontacts)
 
 
 def change(mycontacts):
