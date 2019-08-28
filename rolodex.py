@@ -79,7 +79,7 @@ def get_menu_choice():
     print('2. Add a new contact')
     print('3. Change an existing contact')
     print('4. Delete a contact')
-    print('5. QUit the program')
+    print('5. Quit the program')
     print()
 
     choice = int(input('Enter your choice: '))
