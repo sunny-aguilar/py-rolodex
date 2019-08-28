@@ -82,7 +82,7 @@ def get_menu_choice():
     print('5. QUit the program')
     print()
 
-    choice = int(input('Enter your choice'))
+    choice = int(input('Enter your choice: '))
 
     while choice < LOOK_UP or choice > QUIT:
         choice = int(input('Enter a valid choice: '))
