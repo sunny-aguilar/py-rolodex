@@ -4,7 +4,7 @@ class Contact:
     def __init__(self, name, phone, email):
         self.__name = name
         self.__phone = phone
-        self.
+        self.__email = email
 
     #
     def set_name(self, name):
