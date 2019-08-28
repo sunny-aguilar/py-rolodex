@@ -4,6 +4,7 @@ class Contacts:
     def __init__(self, name, phone, email):
         self.__name = name
 
+    #
     def set_name(self, name):
         self.__phone = name
 
@@ -16,4 +17,14 @@ class Contacts:
     # getters
     def get_name(self):
         return self.__name
+
+    def get_phone(self):
+        return self.__phone
+
+    def get_emails(self):
+        return self.__email
+
+
+
+
 
