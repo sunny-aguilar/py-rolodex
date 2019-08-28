@@ -25,6 +25,8 @@ class Contacts:
         return self.__email
 
 
-
-
+    def __str(self):
+        return 'Name: ' + self.name + \
+                '\nPhone: ' + self.__phone + \
+                '\nEmail: ' + self.__email
 
