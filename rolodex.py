@@ -102,12 +102,18 @@ def add(mycontacts):
     email = input('Email: ')
 
 
-def change:
+def change(mycontacts):
     name = input('Enter a name: ')
 
+    if name in mycontacts:
+        phone = input('Enter the new phone number: ')
+        email = input('Enter the new email address: ')
+        entry = contact.Contact(name, phone, email)
 
-
-
+        mycontacts[name] = entry
+        print('Information updated.')
+    else:
+        print('THat name')
 
 
 
