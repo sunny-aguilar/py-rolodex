@@ -1,6 +1,6 @@
 # #rolodex concept
 
-import Contact
+import contact
 import pickle
 
 LOOK_UP = 1
@@ -101,7 +101,7 @@ def add(mycontacts):
     phone = input('Phone: ')
     email = input('Email: ')
 
-    entry = Contact.Contact(name, phone, email)
+    entry = contact.Contact(name, phone, email)
 
     if name not in mycontacts:
         mycontacts[name] = entry
