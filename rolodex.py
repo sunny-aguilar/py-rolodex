@@ -139,7 +139,7 @@ def delete(mycontacts):
     else:
         print('That name is not found.')
 
-
+    print(mycontacts)
 
 
 def save_contacts(mycontacts):
