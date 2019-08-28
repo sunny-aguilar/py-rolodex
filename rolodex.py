@@ -59,11 +59,12 @@ def get_menu_choice():
 
 
 def load_contacts():
-    input_file = open(FILENAME, 'rb')
+    try:
+        input_file = open(FILENAME, 'rb')
 
-    contact_dct = pickle.load(input_file)
+        contact_dct = pickle.load(input_file)
 
-    input_file.close()
+        input_file.close()
 
     except IOError:
         contact_dct = {}
