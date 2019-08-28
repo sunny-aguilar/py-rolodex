@@ -108,7 +108,7 @@ def change(mycontacts):
     if name in mycontacts:
         phone = input('Enter the new phone number: ')
         email = input('Enter the new email address: ')
-        entry = contact.Contact(name, phone, email)
+        entry = Contact.Contact(name, phone, email)
 
         mycontacts[name] = entry
         print('Information updated.')
@@ -116,9 +116,14 @@ def change(mycontacts):
         print('THat name is not found.')
 
 
+def delete(mycontacts):
+    name = input('Enter a name: ')
+    if name in mycontacts:
+        del mycontacts[name]
+        print('Entry deleted.')
+    else:
+        print('That name is not found.')
 
 
-
-
-
+def save_contacts(mycontacts)
 
